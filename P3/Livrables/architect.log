@@ -1,0 +1,115 @@
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+431  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+479  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+479  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+516  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+21833 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+87572 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE Region (
+                Code_dep_code_commune VARCHAR(6) NOT NULL,
+                reg_code INT NOT NULL,
+                reg_nom VARCHAR(50) NOT NULL,
+                aca_nom VARCHAR(50) NOT NULL,
+                dep_nom VARCHAR(50) NOT NULL,
+                com_nom_maj_court VARCHAR(50) NOT NULL,
+                dep_code INT NOT NULL,
+                dep_nom_num VARCHAR(50) NOT NULL,
+                PRIMARY KEY (Code_dep_code_commune)
+)
+87573 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+CREATE TABLE Contrat (
+                Contrat_ID INT NOT NULL,
+                No_voie INT NOT NULL,
+                B_T_Q VARCHAR(1) NOT NULL,
+                Type_de_voie VARCHAR(4) NOT NULL,
+                Voie VARCHAR(26) DEFAULT 26 NOT NULL,
+                Code_dep_code_commune_contrat VARCHAR(6) NOT NULL,
+                Code_postal VARCHAR(5) NOT NULL,
+                Surface INT NOT NULL,
+                Type_Local VARCHAR(15) NOT NULL,
+                Occupation VARCHAR(15) NOT NULL,
+                Type_contrat VARCHAR(20) NOT NULL,
+                Formule VARCHAR(10) NOT NULL,
+                Valeur_declaree_biens VARCHAR(20) NOT NULL,
+                Prix_cotisation_mensuel INT NOT NULL,
+                PRIMARY KEY (Contrat_ID)
+)
+87574 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+
+ALTER TABLE Contrat ADD CONSTRAINT region_contrat_fk
+FOREIGN KEY (Code_dep_code_commune_contrat)
+REFERENCES Region (Code_dep_code_commune)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+87579 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :3
+88830 [Thread-8] INFO  ca.sqlpower.sql.JDBCDataSource  - Driver Class com.mysql.jdbc.Driver loaded without exception
+89574 [Thread-8] ERROR ca.sqlpower.architect.ddl.ConflictResolver  - Relationship conflicts are not supported yet!
+89575 [Thread-10] INFO  ca.sqlpower.sql.JDBCDataSource  - Driver Class com.mysql.jdbc.Driver loaded without exception
+89597 [Thread-10] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - Starting DDL Generation at Mon Oct 21 09:42:03 GMT+02:00 2024
+89597 [Thread-10] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - Database Target: openclassrooms
+89598 [Thread-10] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - Playpen Dump: openclassrooms
+89598 [Thread-10] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - executing: 
+CREATE TABLE Region (
+                Code_dep_code_commune VARCHAR(6) NOT NULL,
+                reg_code INT NOT NULL,
+                reg_nom VARCHAR(50) NOT NULL,
+                aca_nom VARCHAR(50) NOT NULL,
+                dep_nom VARCHAR(50) NOT NULL,
+                com_nom_maj_court VARCHAR(50) NOT NULL,
+                dep_code INT NOT NULL,
+                dep_nom_num VARCHAR(50) NOT NULL,
+                PRIMARY KEY (Code_dep_code_commune)
+)
+89655 [Thread-10] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - executing: 
+
+
+CREATE TABLE Contrat (
+                Contrat_ID INT NOT NULL,
+                No_voie INT NOT NULL,
+                B_T_Q VARCHAR(1) NOT NULL,
+                Type_de_voie VARCHAR(4) NOT NULL,
+                Voie VARCHAR(26) DEFAULT 26 NOT NULL,
+                Code_dep_code_commune_contrat VARCHAR(6) NOT NULL,
+                Code_postal VARCHAR(5) NOT NULL,
+                Surface INT NOT NULL,
+                Type_Local VARCHAR(15) NOT NULL,
+                Occupation VARCHAR(15) NOT NULL,
+                Type_contrat VARCHAR(20) NOT NULL,
+                Formule VARCHAR(10) NOT NULL,
+                Valeur_declaree_biens VARCHAR(20) NOT NULL,
+                Prix_cotisation_mensuel INT NOT NULL,
+                PRIMARY KEY (Contrat_ID)
+)
+89682 [Thread-10] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - executing: 
+
+
+ALTER TABLE Contrat ADD CONSTRAINT region_contrat_fk
+FOREIGN KEY (Code_dep_code_commune_contrat)
+REFERENCES Region (Code_dep_code_commune)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+89760 [Thread-10] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - Successfully executed 3 out of 3 statements.
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+557  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+621  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+621  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+669  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+22128 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+429  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+486  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+486  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+516  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+325  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+378  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+379  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+408  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+315  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+370  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+371  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+401  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
