@@ -1,12 +1,9 @@
-# 👋 Bienvenue sur mon portfolio, je m'appelle Julien Séré !
-
-Bienvenue sur mon portfolio en ligne !  
-Je suis Data Analyst passionné par les nouvelles technologies et mordu d'IA.
+# 👋 Voici mes projets Data Analyse / Data Viz
 
 ## 🚀 Ce que vous trouverez ici
-- 🌟 Mes projets : [lien vers la section]
-- 🛠️ Mes compétences : [liste ou lien]
-- 📫 Me contacter : [Linkedin](https://www.linkedin.com/in/julien-s-06931b14a/) ou julien.sere@laposte.net
+- Projets Data Analyse : Sourcing, Traitement, Nettoyage et Analyses de données (petit et grand volume)
+- Projets Data Viz : Mise en place de tableaux de bord pour répondre à des contextes et enjeux divers (Tableau de bord, Calculs de KPI)
+- Projets Data Science : Mise en place d'algorithme de prédiction d'authenticité..
 
 ## 🔗 Liens utiles
 - 🌐 [Mon site](https://tonpseudo.github.io)
